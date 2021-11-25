@@ -12,13 +12,18 @@
 
 body{
 	background-color: #6565e7;
+	color: white;
+}
+
+a{
+	color: white;
 }
 
 .wrapper{
 	display: flex;
 	max-width: 1080px;
 	width: 100%;
-	height: 100%;
+	height: 500px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -28,42 +33,51 @@ body{
 .wrapper .left,
 .wrapper .right{
 	width: 50%;
-	height: 100%;
 	padding: 30px;
 }
 
 .wrapper .right{
+	position: absolute;
+	left: 600px;
+	top: -180px;
+}
 
+.wrapper .right h4{
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: bold;
 }
 
 .wrapper .left h1{
-	color: white;
 	position: absolute;
 	width: 737px;
 	height: 56px;
 	left: -240px;
-	top: 709px;
+	top: 480px;
 }
 
 .wrapper .left p{
-	color: white;
 	position: absolute;
 	width: 737px;
 	height: 38px;
 	left: -240px;
-	top: 770px;
+	top: 530px;
 	font-size: 25px;
 	line-height: 37px;
 }
 
 .wrapper .left img{
-	display: block;
+
 	position: absolute;
 	width: 737px;
-	height: 825px;
+	height: 800px;
 	left: -300px;
-	top: 38px;
+	top: -180px;
 	border-radius: 29px;
+}
+
+.wrapper .right .forms p{
+	margin: 50px 0 40px 0;
 }
 
 .wrapper .right .forms ul{
@@ -79,7 +93,6 @@ body{
 	cursor: pointer;
 	background: #6585e7;
 	border-radius: 33px;
-	color: white;
 }
 
 .wrapper .right .forms ul li.active{
@@ -93,11 +106,12 @@ body{
 }
 
 .wrapper .right .input_field{
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 .wrapper .right .input_field p{
 	margin-bottom: 15px;
+	font-weight: bold;
 }
 
 .wrapper .right .input_field .input{
@@ -108,7 +122,13 @@ body{
 	border-radius: 40px;
 }
 
-.wrapper .right .btn{
+.wrapper .right .input_field .toggle{
+	position: absolute;
+	right: 50px;
+	bottom: 125px;
+}
+
+.wrapper .right button{
 	margin-top: 20px;
 	background:  #153184;
 	border-radius: 36px;
@@ -116,8 +136,6 @@ body{
 	float: right;
 	text-align: center;
 	width: 202px;
-}	
-
-.wrapper .right .btn a{
 	color: white;
-}
+	font-size: 16px;
+}	
