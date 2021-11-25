@@ -4,47 +4,60 @@
 	<meta charset="utf-8">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="left">
-			<img src="images/image2.jpg" alt="hand">
+			<img src="images/image2.jpg">
 			<h1>Lorem ipsum dolor sit amet</h1>
 			<p>Lorem ipsum dolor sit amet</p>
 		</div>
 		<div class="right">
+			<h4>Welcome to</h4>
 			<div class="forms">
 				<ul>
 					<li class="login_li">Login</li>
 					<li class="register_li">Register</li>
 				</ul>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perferendis distinctio minus libero earum reprehenderit magni</p>
 			</div>
 
 			<div class="login">
 				<div class="input_field">
 					<p>Username</p>
-					<input type="text" placeholder="Username" class="input">
+					<input type="text" placeholder="Enter your Username" class="input" autocomplete="off" id="username">
 				</div>
 				<div class="input_field">
 					<p>Password</p>
-					<input type="password" placeholder="Password" class="input">
+					<input type="password" placeholder="Enter your Password" class="input" id="password" autocomplete="off">
+					<input type="image" src="images/showpass.png" onclick="togglePassword()" class="toggle">
 				</div>
-				<div class="btn"><a href="#">Login</a></div>
+				<button type="submit">Login</button>
+				<div class="remember">
+					<input type="checkbox"  name="rememberme">
+					<label for="rememberme">Remember me</label>
+					<a href="#">Forgot Password ?</a>
+				</div>
 			</div>
 
 			<div class="register">
 				<div class="input_field">
-					<input type="text" placeholder="Email Address" class="input">
+					<p>Email Address</p>
+					<input type="text" placeholder="Enter your Email Address" class="input" autocomplete="off" id="email">
 				</div>
 				<div class="input_field">
-					<input type="text" placeholder="Username" class="input">
+					<p>Username</p>
+					<input type="text" placeholder="Enter your Username" class="input" autocomplete="off" id="username">
 				</div>
 				<div class="input_field">
-					<input type="password" placeholder="Password" class="input">
+					<p>Password</p>
+					<input type="password" placeholder="Enter your Password" class="input" id="password1" autocomplete="off">
+					<input type="image" src="images/showpass.png" onclick="togglePassword1()" class="toggle">
+					
 				</div>
-				<div class="btn"><a href="#">Register</a></div>
+				<button type="submit">Register</button>
 			</div>
 		</div>
 	</div>
