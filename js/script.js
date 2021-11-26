@@ -33,3 +33,20 @@ function togglePassword1() {
     x.type = "password";
   }
 }
+$(function(){
+	var $registerForm = $("form");
+	if($registerForm.length){
+		$registerForm.validate({
+			rules:{
+				username:{
+					required: true
+			}
+		},
+		messages:{
+			username:{
+				required: 'Username is not valid'
+			}
+		}
+		})
+	}
+})
