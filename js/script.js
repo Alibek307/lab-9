@@ -7,6 +7,19 @@ $(document).ready(function(){
 		$(".register_li").removeClass("active");
 		$(".login").show();
 		$(".register").hide();
+		anime({
+		targets:'.login_li', 
+		translateX: [0, 130],
+		duration: 2000,
+		direction: 'alternate',
+		loop: false
+		})
+		anime({
+		targets:'.register_li', 
+		translateX: [0, -110],
+		direction: 'alternate',
+		loop: false
+		})
 	});
 
 	$(".register_li").click(function(){
@@ -14,6 +27,18 @@ $(document).ready(function(){
 		$(".login_li").removeClass("active");
 		$(".register").show();
 		$(".login").hide();
+		anime({
+		targets:'.register_li', 
+		translateX: [-110, 0],
+		direction: 'alternate',
+		loop: false
+		})
+		anime({
+		targets:'.login_li', 
+		translateX: [130, 0],
+		direction: 'alternate',
+		loop: false
+		})
 	});
 });
 
